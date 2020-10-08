@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+top: 70%;
+left: 50%;
+position: absolute;
+transform: translate(-50%, -50%);
+font-family: Roboto, Arial;
+background: #111;
+}
+
+.window10 {
+position: absolute;
+right: 50%;
+bottom: 150px;
+left: -185px;
+width: 500px;
+height: 300px;
+background-color: #111;
+}
+
+.t1 {
+position: absolute;
+left: calc(50% - 125px);
+top: calc(50% - 130px);
+width: 0;
+height: 200px;
+border-right: 250px solid #00ADEF;
+border-top: 30px solid transparent;
+border-bottom: 30px solid transparent;
+}
+
+.rect1 {
+position: absolute;
+top: calc(50% - 5px);
+left: calc(50% - 155px);
+width: 290px;
+height: 10px;
+background-color: #111;
+}
+
+.rect2 {
+position: absolute;
+top: calc(50% - 5px);
+left: calc(50% - 155px);
+width: 280px;
+height: 10px;
+background-color: #111;
+transform: rotate(90deg);
+}
+
+.loader {
+position: relative;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+.wrapper {
+position: absolute;
+top: -35px;
+transform: scale(1.5);
+}
+
+.loading {
+height: 25px;
+width: 1px;
+position: absolute;
+animation: rotate 3.5s linear infinite;
+}
+
+.loading .dot {
+top: 30px;
+height: 7px;
+width: 7px;
+background: #fff;
+border-radius: 50%;
+position: relative;
+}
+
+.text {
+position: relative;
+bottom: -85px;
+font-size: 25px;
+font-weight: 400;
+font-family: 'Poppins', sans-serif;
+color: #fff;
+}
+
+@keyframes rotate {
+30% {
+transform: rotate(220deg);
+}
+
+40% {
+transform: rotate(450deg);
+opacity: 1;
+}
+
+75% {
+transform: rotate(720deg);
+opacity: 1;
+}
+
+76% {
+opacity: 0;
+}
+
+100% {
+opacity: 0;
+transform: rotate(0deg);
+}
+}
+
+.loading:nth-child(1) {
+animation-delay: 0.15s;
+}
+
+.loading:nth-child(2) {
+animation-delay: 0.3s;
+}
+
+.loading:nth-child(3) {
+animation-delay: 0.45s;
+}
+
+.loading:nth-child(4) {
+animation-delay: 0.6s;
+}
+
+.loading:nth-child(5) {
+animation-delay: 0.75s;
+}
+
+.loading:nth-child(6) {
+animation-delay: 0.9s;
+}
+</style>
+</head>
+
+<body>
+  <!---Window10 Logo-->
+<div class="window10">
+<div class="circle"></div>
+<div class="t1"></div>
+<div class="rect1"></div>
+<div class="rect2"></div>
+</div>
+
+<!---Window10 Loader-->
+<div class="loader">
+<div class="wrapper">
+<div class="loading">
+<div class="dot">
+</div>
+</div>
+<div class="loading">
+<div class="dot">
+</div>
+</div>
+<div class="loading">
+<div class="dot">
+</div>
+</div>
+<div class="loading">
+<div class="dot">
+</div>
+</div>
+<div class="loading">
+<div class="dot">
+</div>
+</div>
+<div class="loading">
+<div class="dot">
+</div>
+</div>
+</div>
+<div class="text">
+Please wait</div>
+</div>
+</body>
+
+</html>
